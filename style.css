@@ -1,0 +1,78 @@
+
+@font-face {
+
+	font-family: alien;
+	src: url("alien.woff");
+}
+
+
+body {
+
+	font-family: alien;
+	background-image: url("achtergrond.jpg");
+	background-position: center-center;
+	background-size: auto 812px;
+
+}
+
+p {
+	display: none;
+}
+
+.benzine{
+
+	grid-area: benzine;
+
+}
+.benodigdheden{
+
+	grid-area: benodigdheden;
+
+}
+.mensen{
+
+	grid-area: mensen;
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1365px){
+	p{
+		display: block;
+	}
+}
+
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
+	body{
+
+		display: grid;
+
+		grid-template-columns: 1fr 1fr;
+
+		grid-template-areas: 
+
+			"benzine benzine"
+			"benodigdheden mensen";
+	}
+	p{
+		display: block;
+	}
+}
+
+
+@media only screen and (min-width: 1920px){
+	body{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+		"benzine benodigdheden mensen";
+	}
+	p{
+		display: block;
+	}
+}
+
+
+
+
