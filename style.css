@@ -12,11 +12,14 @@ body {
 	background-image: url("achtergrond.jpg");
 	background-position: center-center;
 	background-size: auto 812px;
+	color:#FF0000;
 
-}
+
 
 p {
 	display: none;
+
+
 }
 
 .benzine{
