@@ -9,66 +9,73 @@
 body {
 
 	font-family: alien;
+	font-size: 12px;
 	background-image: url("achtergrond.jpg");
-	background-position: center-center;
+	background-position: center center;
 	background-size: auto 812px;
-	color:#FF0000;
-
-
+	background-repeat: no-repeat;
+	background-color: black;
+	color:#ffffff;
+}
 
 p {
 	display: none;
-
-
 }
 
-.benzine{
+.title{
+	grid-area: title;
+}
 
+.benzine {
 	grid-area: benzine;
-
 }
-.benodigdheden{
 
+.benodigdheden {
 	grid-area: benodigdheden;
-
 }
-.mensen{
 
+.mensen {
 	grid-area: mensen;
-
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1365px){
-	p{
+	p {
 		display: block;
+	}
+	body{
+		font-size: 15px;
 	}
 }
 
 
-@media only screen and (min-width: 1366px) and (max-width: 1919px) {
-	body{
+@media only screen and (min-width: 1366px) and (max-width: 1919px){
+	p {
+		display: block;
+	}
+	body {
+		font-size:18px;
 
 		display: grid;
 
 		grid-template-columns: 1fr 1fr;
 
 		grid-template-areas: 
-
+			"title title"
 			"benzine benzine"
 			"benodigdheden mensen";
 	}
-	p{
-		display: block;
-	}
+	
 }
 
 
 @media only screen and (min-width: 1920px){
 	body{
+		font-size: 20px;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-areas: 
+		"title title title"
 		"benzine benodigdheden mensen";
 	}
 	p{

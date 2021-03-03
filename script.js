@@ -8,8 +8,8 @@ var myLineChart = new Chart(brandstof, {
      data: {
         labels: ['Dag 1', 'Dag 4', 'Dag 8 ', 'Dag 12', 'Dag 16', 'Dag 20', 'Dag 24'],
         datasets: [{
-            label: 'Brandstof',
-            backgroundColor: 'black',
+            label: 'Brandstof in KG',
+            backgroundColor: 'rgba(255,255,255,0.1)',
             borderColor: 'rgb(255, 99, 132)',
             data: [86000000, 71700000, 57400000, 43100000, 28800000, 14500000, 200000]
         }]
@@ -27,17 +27,17 @@ var myBarChart = new Chart(eten, {
  data: {
  	labels:['vegetarisch', 'vlees', 'veganistisch', 'vis'],
     datasets: [{
-        label: 'none',
-        barPercentage: 0.5,
-        barThickness: 6,
-        maxBarThickness: 8,
-        minBarLength: 2,
+        label: 'Aantal',
         data: [718 , 1010, 318, 942, 0],
         backgroundColor: ['#FFA500', '#FF4040', '#7171C6', '#00BFFF'],
         borderWidth: '10'
     }]
 },
-    options: {}
+    options: {
+        legend: {
+            display: false
+        }
+    }
 });
 
 
